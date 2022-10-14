@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+//Memulai program
+int main() {
+    
+//Deklarasikan variabel sesuai dengan tipe datanya
+  int NIM, No_Telpon, Kode_Pos;
+  char nama[10], Kota_asal [10], jenis_kelamin[10];
+  float IPK;
+  
+ //Membuat from input untuk user
+   printf("===== FROM DATA DIRI MAHASISWA =====\n");
+   
+   printf("Masukkan NIM Anda!");
+   scanf("%d", &NIM);
+   printf("Siapa Nama Anda?");
+   scanf("%s", nama);
+   printf("Berapa Nomor Telpon Anda");
+   scanf("%d", &No_Telpon);
+   printf("Berapa IPK Anda?");
+   scanf("%f", &IPK);
+   printf("Mana Kota Asalmu");
+   scanf( "%s", Kota_asal);
+   printf("Kode Pos");
+   scanf("%d", &Kode_Pos);
+   printf("Jenis Kelamin");
+   scanf("%s", jenis_kelamin);
+   
+   printf("\n====================================\n");
+   
+ //Menampilkan data yang telah diinputkan oleh user
+   printf("DATA DIRI MAHASISWA FTI UKSW\n");
+   printf("Nama:%s\n", nama);
+   printf("NIM: %d\n", NIM);
+   printf("Nomor Telpon: %d\n", No_Telpon);
+   printf("Jenis Kelamin: %s\n", jenis_kelamin);
+   printf("Kota Asal: %s\n", Kota_asal);
+   printf("Kode Pos %d\n", Kode_Pos);
+   printf("IPK: %.2f \n", IPK);
+ 
+   printf("===== TERIMA KASIH =====\n");
+   printf("===== TUHAN MEMBERKATI 0:) =====");
+  
+ 
+}
