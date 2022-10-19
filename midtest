@@ -1,0 +1,71 @@
+#include <stdio.h>
+
+int main(void)
+{
+  int pilihan;
+  int input[100], jumlah_array, i, nilai_kecil, nilai_besar, jumlah, rata; //Variabel untuk opsi 1 
+  int faktorial, angka, bilangan, hasil;
+
+printf("TES TENGAH SEMESTER ASDOS DDP \n");  
+printf("1. Program Nilai terkecil, terbesar, rata-rata dan jumlah \n");  
+printf("2. Program Faktorial \n");
+scanf("%d", &pilihan);
+
+  if(pilihan==1){
+  printf("Input jumlah element Array: ");
+  scanf("%d",&jumlah_array);
+
+  printf("Input %d angka (dipisah dengan enter): \n",jumlah_array);
+
+  // simpan setiap angka yang diinput ke dalam array
+  for(i = 0; i < jumlah_array; i++){
+    scanf("%d",&input[i]);
+  }
+
+  printf("\n");
+
+  nilai_kecil = input[0];
+  // proses mencari nilai terkecil
+  for(i = 0; i < jumlah_array; i++){
+    if(input[i] < nilai_kecil){
+      nilai_kecil = input[i];
+    }
+  }
+  for(i=0;i<jumlah_array;i++){
+    	if(input[i] > nilai_besar){
+    		nilai_besar = input[i];
+		}
+	}
+  for(i=0;i<jumlah_array;i++){
+    	jumlah = jumlah + input[i];
+	}
+  for(i=0;i<jumlah_array;i++){
+    rata = jumlah/jumlah_array;
+  }
+
+  printf("Angka terkecil adalah: %d \n",nilai_kecil);
+  printf("Angka terbesar adalah: %d \n",nilai_besar);
+  printf("Jumlah keseluruhan adalah: %d \n",jumlah);
+  printf("Jumlah rata adalah: %d \n",rata);
+	
+  }
+  
+  
+else if (pilihan == 2){
+	//Ini adalah fungi rekursif untuk menghitung faktorial dari angka yang diinput oleh user
+int faktorial(angka) {
+
+  if(angka == 0){
+    return 1;
+  } 
+  
+  return angka * faktorial(angka-1); 
+  }
+  printf("Masukkan bilangan: ");
+  scanf("%d", &bilangan);
+  hasil = faktorial(bilangan);
+  printf("Faktorial dari %d adalah %d ", bilangan, hasil);
+  return 0;
+}
+  return 0;
+}
